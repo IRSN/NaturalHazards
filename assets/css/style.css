@@ -1,0 +1,16 @@
+/* style.css */
+
+/* Apply a specific font size to the entire table */
+table {
+  font-size: 10px; /* You can adjust the size as needed */
+}
+
+/* Apply a specific font size to the table header cells (th) */
+th {
+  font-size: 12px; /* You can adjust the size as needed */
+}
+
+/* Apply a specific font size to the table data cells (td) */
+td {
+  font-size: 12px; /* You can adjust the size as needed */
+}
