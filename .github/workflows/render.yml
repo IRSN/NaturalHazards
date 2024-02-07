@@ -5,9 +5,10 @@ on:
 
 name: Render & Deploy Site
 
+env:
+  GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
-  env:
-    GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
   build:
     runs-on: ubuntu-latest
     steps:
