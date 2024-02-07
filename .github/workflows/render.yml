@@ -1,6 +1,5 @@
 on:
   push:
-    branches: master
     paths-ignore:
       - '_site/**'
 
