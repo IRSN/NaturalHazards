@@ -1,0 +1,10 @@
+---
+title: "Flooding simulations"
+---
+
+* Telemac2D v8p3r0 docker image `docker run -v `echo $PWD`:/workdir irsn/telemac-mascaret:latest telemac2d.py --ncsize=10 input.cas`
+* [Funz](https://funz.github.io)-Telemac for parametric studies:
+  * Python: `pip install Funz`, then `import Funz`, `Funz.installModel('Telemac')`
+  * R: `remotes::install_github('Funz/Funz.R'); libary(Funz); Funz::installModel('Telemac')`
+  * bash/cmd.exe: [Standalone dist](https://github.com/Funz/plugin-Telemac/releases/latest)
+

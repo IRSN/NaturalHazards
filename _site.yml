@@ -1,0 +1,12 @@
+name: "NaturalHazards"
+navbar:
+  title: "Natural Hazards"
+  left:
+    - text: "Extreme values"
+      href: evt.html
+    - text: "Flood"
+      href: flood.html
+    - text: "ACROSS"
+      href: across.html
+    - text: "About"
+      href: index.html
