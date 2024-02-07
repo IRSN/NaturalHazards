@@ -1,5 +1,5 @@
 ---
-title: "Extreme values tools"
+title: "Extreme values statistics tools"
 ---
 
 | Name | Short description | Location | Supports unsteady data | Processing historical data | Sampling type | Distribution laws | Confidence interval type | Other tool features |
