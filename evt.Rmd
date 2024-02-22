@@ -1,8 +1,10 @@
 ---
-title: "Extreme values statistics tools"
+title: "Extreme events tools"
 ---
 
-Theses tools are available through R using:
+# Extreme values statistics: 
+
+Following tools are available through R using:
 
   * `install.packages('...')` for CRAN packages (Renext, SpatialExtremes, ...),
   * `devtools::install_github('IRSN/...')` (Windows: assuming devtools & Rtools are available on your system)
@@ -20,3 +22,11 @@ Theses tools are available through R using:
 | dailymet | Tool for analyzing daily weather series (mainly temperatures) using POT methods | [IRSN GitHub](https://github.com/IRSN/dailymet) | <span style="color:green">✔</span> | <span style="color:red">✘</span>| POT | GPD, exhibition | x(t), x | <span style="color:red">✘</span> | daily | | Functions to describe seasonality and annual trend |
 | SeaLev | Estimation of extreme sea levels by combining tide and surge | [IRSN GitHub](https://github.com/IRSN/SeaLev) | <span style="color:red">✘</span>| <span style="color:green">✔</span> (with Renext) | POT or maximum block (premiums) | Renext laws | <span style="color:red">✘</span> | <span style="color:red">✘</span> | tidely | Delta | Theoretical tide distribution |
 
+
+# Extreme events quantization
+
+Sample/cluster extreme events (like flooding maps) to keep representativeness of rare probability / high impact:
+
+* [FunQuant: A R package to perform quantization in the context of rare events and time-consuming simulations](https://github.com/IRSN/FunQuant)
+* [1000 random flooding maps of Loire](https://github.com/IRSN/data_LoireSully-TelemacV8)
+![](https://github.com/IRSN/data_LoireSully-TelemacV8/blob/main/data/er,ks2,ks3,ks4,ks_fp,of,qmax,tm=0.000836873559746891,26.7021984417364,42.7840373602556,19.7402406392992,15.659448278778,0.0494419520069845,23994.2660076157,643497.79246187_maxH_sully.png?raw=true)
