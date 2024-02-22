@@ -11,7 +11,7 @@
 
 
 
-<title>Extreme values statistics tools</title>
+<title>Extreme events tools</title>
 
 <script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -266,11 +266,22 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Extreme values statistics tools</h1>
+<h1 class="title toc-ignore">Extreme events tools</h1>
 
 </div>
 
 
+<div id="extreme-values-statistics" class="section level1">
+<h1>Extreme values statistics:</h1>
+<p>Following tools are available through R using:</p>
+<ul>
+<li><code>install.packages('...')</code> for CRAN packages (Renext,
+SpatialExtremes, …),</li>
+<li><code>devtools::install_github('IRSN/...')</code> (Windows: assuming
+devtools &amp; Rtools are available on your system)</li>
+<li><code>install.packages('https://github.com/IRSN/.../releases/download/....tgz|zip|tar.gz', repos=NULL, type='binary')</code>
+(precompiled for Linux (x86), Windows, or MacOSX)</li>
+</ul>
 <table style="width:100%;">
 <colgroup>
 <col width="6%" />
@@ -293,7 +304,7 @@ $(document).ready(function () {
 <th align="left">Sampling type</th>
 <th align="left">Distribution laws</th>
 <th align="left">Confidence interval type</th>
-<th align="left">Other tool features</th>
+<th align="left">Covariables</th>
 </tr>
 </thead>
 <tbody>
@@ -307,9 +318,9 @@ GitHub</a></td>
 <td align="left"><span style="color:green">✔</span></td>
 <td align="left">POT block maxima r-LOS</td>
 <td align="left">GPD, expo, GEV, gumbel, mixed expo, log normal,
-Weibull, gamma</td>
-<td align="left">Delta</td>
-<td align="left">Various anova statistical tests</td>
+Weibull, gamma (any with given parameters)</td>
+<td align="left"><span style="color:red">✘</span></td>
+<td align="left"><span style="color:green">✔</span></td>
 </tr>
 <tr class="even">
 <td align="left">NSGEV</td>
@@ -321,8 +332,8 @@ GitHub</a></td>
 <td align="left"><span style="color:red">✘</span></td>
 <td align="left">maximum block</td>
 <td align="left">GEV, gumbel</td>
-<td align="left">Delta Likelihood Profile Bootstrap</td>
-<td align="left">Various anova statistical tests</td>
+<td align="left">x(t)</td>
+<td align="left"><span style="color:red">✘</span></td>
 </tr>
 <tr class="odd">
 <td align="left">potomax</td>
@@ -334,9 +345,8 @@ GitHub</a></td>
 <td align="left"><span style="color:green">✔</span></td>
 <td align="left">POT block maximum</td>
 <td align="left">GPD, expo, GEV, gumbel</td>
-<td align="left">Delta Likelihood Profile</td>
-<td align="left">Validation method to check the convergence of results
-(argument check=TRUE)</td>
+<td align="left"><span style="color:red">✘</span></td>
+<td align="left"><span style="color:green">✔</span></td>
 </tr>
 <tr class="even">
 <td align="left">SpatialExtremes</td>
@@ -352,9 +362,8 @@ NSGEV)</td>
 <td align="left"><span style="color:red">✘</span></td>
 <td align="left">maximum block</td>
 <td align="left">GEV, gumbel</td>
-<td align="left">Delta Likelihood Profile Bootstrap</td>
-<td align="left">Package to extrapolate temperatures in places where
-there is</td>
+<td align="left"></td>
+<td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left">bever</td>
@@ -366,9 +375,8 @@ GitHub</a></td>
 <td align="left"><span style="color:green">✔</span></td>
 <td align="left">POT block maximum</td>
 <td align="left">GPD, expo, GEV, gumbel</td>
-<td align="left">Credibility intervals with HPD and equal tails
-methods</td>
-<td align="left">Calculation of the predictive distribution</td>
+<td align="left"><span style="color:red">✘</span></td>
+<td align="left"><span style="color:red">✘</span></td>
 </tr>
 <tr class="even">
 <td align="left">beverstan</td>
@@ -380,9 +388,8 @@ GitHub</a></td>
 <td align="left"><span style="color:green">✔</span></td>
 <td align="left">maximum block</td>
 <td align="left">GEV, gumbel</td>
-<td align="left">Credibility intervals with HPD and equal tails
-methods</td>
-<td align="left"></td>
+<td align="left">x(t)</td>
+<td align="left"><span style="color:green">✔</span></td>
 </tr>
 <tr class="odd">
 <td align="left">dailymet</td>
@@ -394,8 +401,8 @@ GitHub</a></td>
 <td align="left"><span style="color:red">✘</span></td>
 <td align="left">POT</td>
 <td align="left">GPD, exhibition</td>
-<td align="left"></td>
-<td align="left">Functions to describe seasonality and annual trend</td>
+<td align="left">x(t), x</td>
+<td align="left"><span style="color:red">✘</span></td>
 </tr>
 <tr class="even">
 <td align="left">SeaLev</td>
@@ -407,21 +414,25 @@ GitHub</a></td>
 <td align="left"><span style="color:green">✔</span> (with Renext)</td>
 <td align="left">POT or maximum block (premiums)</td>
 <td align="left">Renext laws</td>
-<td align="left">Delta</td>
-<td align="left">Theoretical tide distribution</td>
+<td align="left"><span style="color:red">✘</span></td>
+<td align="left"><span style="color:red">✘</span></td>
 </tr>
 </tbody>
 </table>
-<p>Theses tools are available through R using:</p>
+</div>
+<div id="extreme-events-quantization" class="section level1">
+<h1>Extreme events quantization</h1>
+<p>Sample/cluster extreme events (like flooding maps) to keep
+representativeness of rare probability / high impact:</p>
 <ul>
-<li><code>install.packages('...')</code> for CRAN packages (Renext,
-SpatialExtremes, …),</li>
-<li><code>install.packages('https://github.com/IRSN/.../releases/download/....tgz|zip|tar.gz', repos=NULL, type='binary')</code>
-for packages available on GitHub (potomax, bever, beverstan, dailymet,
-SeaLev) , precompiled for Linux (x86), Windows, or MacOSX</li>
-<li><code>devtools::install_github('IRSN/...')</code> (asuming devtools
-&amp; Rtools for windows are available on yout system)</li>
+<li><a href="https://github.com/IRSN/FunQuant">FunQuant: A R package to
+perform quantization in the context of rare events and time-consuming
+simulations</a></li>
+<li><a href="https://github.com/IRSN/data_LoireSully-TelemacV8">1000
+random flooding maps of Loire</a> <img
+src="https://github.com/IRSN/data_LoireSully-TelemacV8/blob/main/data/er,ks2,ks3,ks4,ks_fp,of,qmax,tm=0.000836873559746891,26.7021984417364,42.7840373602556,19.7402406392992,15.659448278778,0.0494419520069845,23994.2660076157,643497.79246187_maxH_sully.png?raw=true" /></li>
 </ul>
+</div>
 
 
 
