@@ -10,3 +10,7 @@ title: "Flooding simulations"
   * R: `remotes::install_github('Funz/Funz.R'); libary(Funz); Funz::installModel('Telemac')`
   * bash/cmd.exe: [Standalone dist](https://github.com/Funz/plugin-Telemac/releases/latest)
 
+
+Related references :
+
+* [Uncertainty and Sensitivity Analyses with Dépendent Inputs in a 2D Hydraulic Model of the Loire River](https://hal.science/irsn-03925235v1)
