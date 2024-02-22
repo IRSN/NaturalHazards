@@ -2,7 +2,7 @@
 title: "Base de données Tempêtes & Submersions Historiques"
 ---
 
-[![](IRSN/NaturalHazards/bddtsh.JPG)](https://bddtsh.irsn.fr/)
+[![](https://github.com/IRSN/NaturalHazards/blob/main/bddtsh.JPG)](https://bddtsh.irsn.fr/)
 
 
 
