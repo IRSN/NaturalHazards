@@ -282,17 +282,20 @@ devtools &amp; Rtools are available on your system)</li>
 <li><code>install.packages('https://github.com/IRSN/.../releases/download/....tgz|zip|tar.gz', repos=NULL, type='binary')</code>
 (precompiled for Linux (x86), Windows, or MacOSX)</li>
 </ul>
-<table style="width:100%;">
+<table>
 <colgroup>
-<col width="6%" />
-<col width="32%" />
-<col width="6%" />
-<col width="6%" />
-<col width="6%" />
-<col width="6%" />
-<col width="6%" />
-<col width="6%" />
-<col width="22%" />
+<col width="5%" />
+<col width="27%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="18%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -305,6 +308,9 @@ devtools &amp; Rtools are available on your system)</li>
 <th align="left">Distribution laws</th>
 <th align="left">Confidence interval type</th>
 <th align="left">Covariables</th>
+<th align="left">Censored data</th>
+<th align="left">Data types</th>
+<th align="left">Other tool features</th>
 </tr>
 </thead>
 <tbody>
@@ -321,6 +327,9 @@ GitHub</a></td>
 Weibull, gamma (any with given parameters)</td>
 <td align="left"><span style="color:red">✘</span></td>
 <td align="left"><span style="color:green">✔</span></td>
+<td align="left">events, yearly, struct.</td>
+<td align="left">Delta</td>
+<td align="left">Various anova statistical tests</td>
 </tr>
 <tr class="even">
 <td align="left">NSGEV</td>
@@ -334,6 +343,9 @@ GitHub</a></td>
 <td align="left">GEV, gumbel</td>
 <td align="left">x(t)</td>
 <td align="left"><span style="color:red">✘</span></td>
+<td align="left">yearly</td>
+<td align="left">Delta Likelihood Profile Bootstrap</td>
+<td align="left">Various anova statistical tests</td>
 </tr>
 <tr class="odd">
 <td align="left">potomax</td>
@@ -347,6 +359,10 @@ GitHub</a></td>
 <td align="left">GPD, expo, GEV, gumbel</td>
 <td align="left"><span style="color:red">✘</span></td>
 <td align="left"><span style="color:green">✔</span></td>
+<td align="left">events, yearly, struct.</td>
+<td align="left">Delta Likelihood Profile</td>
+<td align="left">Validation method to check the convergence of results
+(argument check=TRUE)</td>
 </tr>
 <tr class="even">
 <td align="left">SpatialExtremes</td>
@@ -364,6 +380,10 @@ NSGEV)</td>
 <td align="left">GEV, gumbel</td>
 <td align="left"></td>
 <td align="left"></td>
+<td align="left"></td>
+<td align="left">Delta Likelihood Profile Bootstrap</td>
+<td align="left">Package to extrapolate temperatures in places where
+there is data (spatial covariates)</td>
 </tr>
 <tr class="odd">
 <td align="left">bever</td>
@@ -377,6 +397,10 @@ GitHub</a></td>
 <td align="left">GPD, expo, GEV, gumbel</td>
 <td align="left"><span style="color:red">✘</span></td>
 <td align="left"><span style="color:red">✘</span></td>
+<td align="left">events, yearly</td>
+<td align="left">Credibility intervals with HPD and equal tails
+methods</td>
+<td align="left">Calculation of the predictive distribution</td>
 </tr>
 <tr class="even">
 <td align="left">beverstan</td>
@@ -390,6 +414,10 @@ GitHub</a></td>
 <td align="left">GEV, gumbel</td>
 <td align="left">x(t)</td>
 <td align="left"><span style="color:green">✔</span></td>
+<td align="left">yearly</td>
+<td align="left">Credibility intervals with HPD and equal tails
+methods</td>
+<td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left">dailymet</td>
@@ -403,6 +431,9 @@ GitHub</a></td>
 <td align="left">GPD, exhibition</td>
 <td align="left">x(t), x</td>
 <td align="left"><span style="color:red">✘</span></td>
+<td align="left">daily</td>
+<td align="left"></td>
+<td align="left">Functions to describe seasonality and annual trend</td>
 </tr>
 <tr class="even">
 <td align="left">SeaLev</td>
@@ -416,6 +447,9 @@ GitHub</a></td>
 <td align="left">Renext laws</td>
 <td align="left"><span style="color:red">✘</span></td>
 <td align="left"><span style="color:red">✘</span></td>
+<td align="left">tidely</td>
+<td align="left">Delta</td>
+<td align="left">Theoretical tide distribution</td>
 </tr>
 </tbody>
 </table>
